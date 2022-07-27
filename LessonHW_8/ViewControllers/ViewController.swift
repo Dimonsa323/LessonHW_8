@@ -7,13 +7,25 @@
 
 import UIKit
 
+    // MARK: - View Controller
+
 class ViewController: UIViewController {
 
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
     }
 
 
 }
 
+    // MARK: - Private Extension
+
+private extension ViewController {
+    
+    func setupUI () {
+        
+    }
+}

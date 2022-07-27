@@ -13,6 +13,8 @@
 		140A9CF328904796004EBE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF128904796004EBE74 /* Main.storyboard */; };
 		140A9CF528904798004EBE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF428904798004EBE74 /* Assets.xcassets */; };
 		140A9CF828904798004EBE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF628904798004EBE74 /* LaunchScreen.storyboard */; };
+		140A9D0528913D8F004EBE74 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9D0428913D8F004EBE74 /* Hero.swift */; };
+		140A9D082891405B004EBE74 /* ArrayHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9D072891405B004EBE74 /* ArrayHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		140A9CF428904798004EBE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140A9CF728904798004EBE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140A9CF928904798004EBE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140A9D0428913D8F004EBE74 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		140A9D072891405B004EBE74 /* ArrayHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		140A9CEA28904796004EBE74 /* LessonHW_8 */ = {
 			isa = PBXGroup;
 			children = (
-				140A9CEB28904796004EBE74 /* AppDelegate.swift */,
-				140A9CED28904796004EBE74 /* SceneDelegate.swift */,
-				140A9CEF28904796004EBE74 /* ViewController.swift */,
-				140A9CF128904796004EBE74 /* Main.storyboard */,
-				140A9CF428904798004EBE74 /* Assets.xcassets */,
-				140A9CF628904798004EBE74 /* LaunchScreen.storyboard */,
-				140A9CF928904798004EBE74 /* Info.plist */,
+				140A9D0328913CBA004EBE74 /* Storyboard */,
+				140A9D0228913CAD004EBE74 /* Source */,
+				140A9D0128913C81004EBE74 /* ViewControllers */,
+				140A9D0028913B56004EBE74 /* SupportFiles */,
+				140A9CFF28913B50004EBE74 /* Model */,
 			);
 			path = LessonHW_8;
+			sourceTree = "<group>";
+		};
+		140A9CFF28913B50004EBE74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				140A9D0428913D8F004EBE74 /* Hero.swift */,
+				140A9D072891405B004EBE74 /* ArrayHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		140A9D0028913B56004EBE74 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				140A9CF928904798004EBE74 /* Info.plist */,
+				140A9CED28904796004EBE74 /* SceneDelegate.swift */,
+				140A9CEB28904796004EBE74 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		140A9D0128913C81004EBE74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				140A9CEF28904796004EBE74 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		140A9D0228913CAD004EBE74 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				140A9CF428904798004EBE74 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		140A9D0328913CBA004EBE74 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				140A9CF628904798004EBE74 /* LaunchScreen.storyboard */,
+				140A9CF128904796004EBE74 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140A9D082891405B004EBE74 /* ArrayHistory.swift in Sources */,
 				140A9CF028904796004EBE74 /* ViewController.swift in Sources */,
 				140A9CEC28904796004EBE74 /* AppDelegate.swift in Sources */,
 				140A9CEE28904796004EBE74 /* SceneDelegate.swift in Sources */,
+				140A9D0528913D8F004EBE74 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U5S5LAP79;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LessonHW_8/Info.plist;
+				INFOPLIST_FILE = LessonHW_8/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U5S5LAP79;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LessonHW_8/Info.plist;
+				INFOPLIST_FILE = LessonHW_8/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
