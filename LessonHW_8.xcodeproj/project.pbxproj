@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		140A9CEC28904796004EBE74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9CEB28904796004EBE74 /* AppDelegate.swift */; };
 		140A9CEE28904796004EBE74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9CED28904796004EBE74 /* SceneDelegate.swift */; };
-		140A9CF028904796004EBE74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9CEF28904796004EBE74 /* ViewController.swift */; };
+		140A9CF028904796004EBE74 /* HistoryHeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9CEF28904796004EBE74 /* HistoryHeroVC.swift */; };
 		140A9CF328904796004EBE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF128904796004EBE74 /* Main.storyboard */; };
 		140A9CF528904798004EBE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF428904798004EBE74 /* Assets.xcassets */; };
 		140A9CF828904798004EBE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A9CF628904798004EBE74 /* LaunchScreen.storyboard */; };
 		140A9D0528913D8F004EBE74 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9D0428913D8F004EBE74 /* Hero.swift */; };
-		140A9D082891405B004EBE74 /* ArrayHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9D072891405B004EBE74 /* ArrayHistory.swift */; };
+		140A9D0C28916533004EBE74 /* HistoryHeroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140A9D0B28916532004EBE74 /* HistoryHeroVC.xib */; };
+		140A9D1128917459004EBE74 /* BuildHeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A9D0F28917459004EBE74 /* BuildHeroVC.swift */; };
+		140A9D1228917459004EBE74 /* BuildHeroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140A9D1028917459004EBE74 /* BuildHeroVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		140A9CE828904796004EBE74 /* LessonHW_8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonHW_8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		140A9CEB28904796004EBE74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		140A9CED28904796004EBE74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		140A9CEF28904796004EBE74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		140A9CEF28904796004EBE74 /* HistoryHeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeroVC.swift; sourceTree = "<group>"; };
 		140A9CF228904796004EBE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		140A9CF428904798004EBE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140A9CF728904798004EBE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140A9CF928904798004EBE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		140A9D0428913D8F004EBE74 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
-		140A9D072891405B004EBE74 /* ArrayHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHistory.swift; sourceTree = "<group>"; };
+		140A9D0B28916532004EBE74 /* HistoryHeroVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryHeroVC.xib; sourceTree = "<group>"; };
+		140A9D0F28917459004EBE74 /* BuildHeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildHeroVC.swift; sourceTree = "<group>"; };
+		140A9D1028917459004EBE74 /* BuildHeroVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuildHeroVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				140A9D0428913D8F004EBE74 /* Hero.swift */,
-				140A9D072891405B004EBE74 /* ArrayHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,7 +94,8 @@
 		140A9D0128913C81004EBE74 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				140A9CEF28904796004EBE74 /* ViewController.swift */,
+				140A9D0E2891741B004EBE74 /* BuildHero */,
+				140A9D0D289173F1004EBE74 /* HistoryHero */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,6 +115,24 @@
 				140A9CF128904796004EBE74 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		140A9D0D289173F1004EBE74 /* HistoryHero */ = {
+			isa = PBXGroup;
+			children = (
+				140A9D0B28916532004EBE74 /* HistoryHeroVC.xib */,
+				140A9CEF28904796004EBE74 /* HistoryHeroVC.swift */,
+			);
+			path = HistoryHero;
+			sourceTree = "<group>";
+		};
+		140A9D0E2891741B004EBE74 /* BuildHero */ = {
+			isa = PBXGroup;
+			children = (
+				140A9D0F28917459004EBE74 /* BuildHeroVC.swift */,
+				140A9D1028917459004EBE74 /* BuildHeroVC.xib */,
+			);
+			path = BuildHero;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +196,8 @@
 				140A9CF828904798004EBE74 /* LaunchScreen.storyboard in Resources */,
 				140A9CF528904798004EBE74 /* Assets.xcassets in Resources */,
 				140A9CF328904796004EBE74 /* Main.storyboard in Resources */,
+				140A9D1228917459004EBE74 /* BuildHeroVC.xib in Resources */,
+				140A9D0C28916533004EBE74 /* HistoryHeroVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140A9D082891405B004EBE74 /* ArrayHistory.swift in Sources */,
-				140A9CF028904796004EBE74 /* ViewController.swift in Sources */,
+				140A9CF028904796004EBE74 /* HistoryHeroVC.swift in Sources */,
 				140A9CEC28904796004EBE74 /* AppDelegate.swift in Sources */,
+				140A9D1128917459004EBE74 /* BuildHeroVC.swift in Sources */,
 				140A9CEE28904796004EBE74 /* SceneDelegate.swift in Sources */,
 				140A9D0528913D8F004EBE74 /* Hero.swift in Sources */,
 			);
