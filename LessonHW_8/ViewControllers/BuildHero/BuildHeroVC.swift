@@ -21,7 +21,7 @@ class BuildHeroVC: UIViewController {
     
     //MARK: - Properties
     
-//    var hero: Hero!
+    var hero: Heros!
     
     // MARK: - Life Cycle
     
@@ -39,7 +39,7 @@ extension BuildHeroVC {
     }
     
     func setupHeroBuild() {
-//        heroNameLabel.text = hero.name
+        heroNameLabel.text = hero.name
 //        gunLabel.text = hero.equipment.gun
 //        swordLabel.text = hero.equipment.sword
 //        armorLabel.text = hero.equipment.armor
