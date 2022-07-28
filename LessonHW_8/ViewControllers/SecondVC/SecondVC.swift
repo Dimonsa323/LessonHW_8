@@ -41,5 +41,21 @@ extension SecondVC {
         nameheroLabel.textColor = .yellow
         
         view.backgroundColor = .darkGray
+
+        setupNavigationController()
+    }
+
+    private func setupNavigationController() {
+        let button = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(showHistoryVC))
+
+        navigationItem.rightBarButtonItem = button
+    }
+
+    @objc
+    private func showHistoryVC() {
+        let vc = HistoryHeroVC()
+        vc.hero = hero
+
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

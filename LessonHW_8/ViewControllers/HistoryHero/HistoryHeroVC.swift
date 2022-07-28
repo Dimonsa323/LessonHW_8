@@ -19,7 +19,7 @@ class HistoryHeroVC: UIViewController {
     
     //MARK: - Properties
     
-//    var hero: Hero!
+    var hero: Heros!
     
     // MARK: - Life Cycle
     
@@ -41,9 +41,9 @@ private extension HistoryHeroVC {
     }
     
     func setupHero() {
-//        heroImageView.image = hero.heroImage
-//        heroLabel.text = hero.name
-//        historyLabel.text = hero.history
+        heroImageView.image = hero.image
+        heroLabel.text = hero.name
+        historyLabel.text = hero.fullText
     }
     
     func setupImageView() {
@@ -56,7 +56,7 @@ private extension HistoryHeroVC {
     @objc
     func didSelectImageView() {
         let vc = BuildHeroVC()
-//        vc.hero = hero
+        vc.hero = hero
         
         navigationController?.pushViewController(vc, animated: true)
     }
