@@ -38,6 +38,7 @@ private extension HistoryHeroVC {
     func setupUI () {
         setupHero()
         setupImageView()
+        title = "History"
     }
     
     func setupHero() {
